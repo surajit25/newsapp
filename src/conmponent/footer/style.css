@@ -1,0 +1,11 @@
+.footercopyright{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width:500px) {
+    
+    .footercopyright{
+        font-size: 12px;
+    }
+}
