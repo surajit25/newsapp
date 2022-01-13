@@ -83,9 +83,9 @@ function CategoryWise(){
             </Tabs>
 
 
-            {value=='headlines'?<Articles />:""}
+            {value==='headlines'?<Articles />:""}
 
-            {value!='headlines'?<Category category={value} loading={true} />:""}
+            {value!=='headlines'?<Category category={value} loading={true} />:""}
 
             
 

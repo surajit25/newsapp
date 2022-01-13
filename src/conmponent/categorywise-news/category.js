@@ -1,5 +1,5 @@
 import { Paper } from "@mui/material"
-import axios from "axios"
+
 import { useEffect, useState } from "react"
 
 import * as React from 'react';
@@ -7,9 +7,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+
 import Typography from '@mui/material/Typography';
-import { useHistory } from "react-router";
+
 
 import Api from "../api";
 
@@ -20,8 +20,7 @@ function Category(props){
 
     const [loading,setLoading] = useState('')
 
-    // const history = useHistory()
-
+    
     useEffect(()=>{
 
         setLoading(props.loading)
@@ -34,10 +33,7 @@ function Category(props){
         })
     },[props])
 
-    const visitpage=(item)=>{
-
-        //  history.push(item.url)
-    }
+  
 
     return(
         <>

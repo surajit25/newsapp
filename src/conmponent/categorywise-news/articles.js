@@ -1,5 +1,5 @@
 import { Paper } from "@mui/material"
-import axios from "axios"
+
 import { useEffect, useState } from "react"
 
 import * as React from 'react';
@@ -7,9 +7,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+
 import Typography from '@mui/material/Typography';
-import { useHistory } from "react-router";
+
 import Api from "../api";
 import { useSelector } from "react-redux";
 
@@ -23,8 +23,7 @@ function Articles(){
 
     const searchingarticles = useSelector(state=>state.Articles)
 
-    // const history = useHistory()
-
+   
     useEffect(()=>{
 
         console.log(searchingarticles)
@@ -37,10 +36,7 @@ function Articles(){
         })
     },[])
 
-    const visitpage=(item)=>{
-
-        //  history.push(item.url)
-    }
+ 
 
     return(
         <>
